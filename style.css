@@ -20,7 +20,7 @@
 
   html, body {
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%; /* Use 100% instead of 100vw to avoid scrollbar overflow bugs in Chrome */
     max-width: 100%;
     position: relative;
     box-sizing: border-box;
@@ -58,8 +58,9 @@
   .app-wrapper {
     position: relative;
     z-index: 2;
-    overflow-x: hidden; /* Prevent any leaked width from children */
+    overflow-x: hidden;
     width: 100%;
+    max-width: 100%;
   }
 
   /* Lenis Scroll Boilerplate */
@@ -154,9 +155,8 @@
 
 @layer components {
   .container {
-    width: min(90%, 1400px); /* Expanded for elite displays */
+    width: min(92%, 1400px); /* Slightly reduced percentage to avoid rounding bleed in Chrome */
     margin-inline: auto;
-    padding-inline: 5%; /* Fluid mobile padding */
   }
 
   .section-title {
@@ -332,10 +332,9 @@
   position: absolute;
   top: 50%;
   right: -5%;
-  width: 60%;
+  width: min(60%, 800px); /* Constraint to prevent wide bleed */
   height: 80%;
-  background: url('/assets/hero_bg.png') no-repeat center center;
-  background-size: contain;
+  object-fit: contain;
   opacity: 0.15;
   transform: translateY(-50%);
   filter: blur(2px);
@@ -406,12 +405,14 @@
     margin-bottom: 2rem;
   }
   .hero-title {
-    font-size: clamp(2.5rem, 10vw, 4rem);
+    font-size: clamp(2rem, 12vw, 3.5rem); /* Lower base for 320px screens */
+    margin-bottom: 1.5rem;
   }
   .hero p {
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 4vw, 1.25rem);
     line-height: 1.5;
     margin-top: 1rem;
+    max-width: 100%;
   }
 }
 
