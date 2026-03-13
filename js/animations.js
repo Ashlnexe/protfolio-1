@@ -73,6 +73,9 @@ export function initAboutScroll() {
             
             const inner = document.createElement('span');
             inner.className = 'word-inner';
+            if (word === 'courage.') {
+                inner.style.fontStyle = 'italic';
+            }
             inner.textContent = word + '\u00A0'; // Add non-breaking space
             
             wrapper.appendChild(inner);
