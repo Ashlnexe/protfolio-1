@@ -59,6 +59,22 @@ export function initAboutScroll() {
             }
         );
     }
+
+    const highlights = gsap.utils.toArray('.text-highlight');
+    if (highlights.length) {
+        highlights.forEach(highlight => {
+            gsap.to(highlight, {
+                backgroundPosition: "0% 0",
+                ease: "none",
+                scrollTrigger: {
+                    trigger: highlight,
+                    start: "top 85%",
+                    end: "bottom 55%",
+                    scrub: 1.5
+                }
+            });
+        });
+    }
 }
 
 export function initTimelinePop() {
