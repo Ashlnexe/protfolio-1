@@ -60,21 +60,39 @@ export function initAboutScroll() {
         );
     }
 
-    const highlights = gsap.utils.toArray('.text-highlight');
-    if (highlights.length) {
-        highlights.forEach(highlight => {
-            gsap.to(highlight, {
-                backgroundPosition: "0% 0",
-                ease: "none",
-                scrollTrigger: {
-                    trigger: highlight,
-                    start: "top 85%",
-                    end: "bottom 55%",
-                    scrub: 1.5
-                }
-            });
+    // Word-by-word reveal for paragraphs
+    const splitTextAnims = document.querySelectorAll('.split-text-anim');
+    splitTextAnims.forEach(paragraph => {
+        // Split text by words, ignoring extra whitespace
+        const words = paragraph.innerText.trim().split(/\s+/);
+        paragraph.innerHTML = '';
+        
+        words.forEach(word => {
+            const wrapper = document.createElement('span');
+            wrapper.className = 'word-wrapper';
+            
+            const inner = document.createElement('span');
+            inner.className = 'word-inner';
+            inner.textContent = word + '\u00A0'; // Add non-breaking space
+            
+            wrapper.appendChild(inner);
+            paragraph.appendChild(wrapper);
         });
-    }
+
+        // Animate the words changing to black on scroll
+        const wordInners = paragraph.querySelectorAll('.word-inner');
+        gsap.to(wordInners, {
+            color: '#000000',
+            stagger: 0.1,
+            ease: "none",
+            scrollTrigger: {
+                trigger: paragraph,
+                start: "top 80%",
+                end: "bottom 60%",
+                scrub: 1
+            }
+        });
+    });
 }
 
 export function initTimelinePop() {
