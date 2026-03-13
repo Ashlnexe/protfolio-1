@@ -27,10 +27,11 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--bg-color);
     color: #000000;
-    line-height: 1.6;
+    line-height: 1.625; /* Optimized line-height for readability */
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem; /* 16px base */
     position: relative;
   }
 
@@ -131,10 +132,15 @@
 }
 
 @layer components {
+  .container {
+    width: min(90%, 1200px);
+    margin-inline: auto;
+  }
+
   .section-title {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 500;
-    letter-spacing: -0.02em;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
   }
 
@@ -147,13 +153,7 @@
   }
 
   .section-padding {
-    padding: 8rem 0;
-  }
-
-  @media (max-width: 768px) {
-    .section-padding {
-      padding: 5rem 0;
-    }
+    padding: clamp(4rem, 10vh, 10rem) 0;
   }
 }
 
@@ -307,10 +307,10 @@
 }
 
 .hero-title {
-  font-size: clamp(4rem, 13vw, 7.5rem);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.03em;
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
   position: relative;
   z-index: 2;
 }
@@ -376,9 +376,9 @@
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.about-reveal {
-  opacity: 0;
-  will-change: transform, opacity;
+.about-parallax-bg {
+  will-change: transform;
+  pointer-events: none;
 }
 
 .reveal.from-left {
@@ -458,11 +458,11 @@
 }
 
 .stats-label {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #000000;
+  color: #333333; /* Contrast fix */
   margin-top: 0.4rem;
 }
 
@@ -644,6 +644,9 @@
 }
 
 .card-icon {
+  width: 2rem;
+  height: 2rem;
+  aspect-ratio: 1 / 1;
   color: var(--teal);
   opacity: 0.85;
 }
@@ -872,6 +875,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding: 2rem 0;
+  min-height: 100px; /* CLS stability */
 }
 
 .marquee-row {
