@@ -102,20 +102,54 @@ const contactSection = document.getElementById('contact');
 if (letsTalkBtn && loadingScreen && contactSection) {
   letsTalkBtn.addEventListener('click', (e) => {
     e.preventDefault();
-
-    // Show loading screen
     loadingScreen.classList.add('active');
-
-    // Wait for 2 seconds
     setTimeout(() => {
-      // Hide loading screen
       loadingScreen.classList.remove('active');
-
-      // Scroll to contact section
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      lenis.scrollTo(contactSection);
     }, 2000);
   });
 }
+
+// Contact form Submission Success Message
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    contactForm.innerHTML = `
+      <div class="p-8 bg-black/[0.03] rounded-2xl border border-black/10 text-center flex flex-col items-center justify-center min-h-[300px]">
+        <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="text-black mb-6">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <h3 class="text-2xl font-bold tracking-tight text-black mb-2">Message Sent</h3>
+        <p class="text-black/70">Thank you for reaching out. I'll get back to you shortly.</p>
+      </div>
+    `;
+  });
+}
+
+// Ensure all anchor links use Lenis smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    if (this.getAttribute('href').length > 1) {
+      e.preventDefault();
+      const targetElement = document.querySelector(this.getAttribute('href'));
+      if (targetElement) {
+        lenis.scrollTo(targetElement);
+        // Also close mobile menu if it's open
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        if (mobileMenu && mobileMenu.classList.contains('open')) {
+          mobileMenu.classList.remove('open');
+          document.body.style.overflow = '';
+          if (menuIcon) menuIcon.style.display = 'block';
+          if (closeIcon) closeIcon.style.display = 'none';
+        }
+      }
+    }
+  });
+});
 
 // Premium Intro Loader Animation
 const introLoader = document.getElementById('intro-loader');

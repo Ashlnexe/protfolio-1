@@ -1095,6 +1095,52 @@
   }
 }
 
+/* Case Study Snippets */
+.case-study-snippet {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Endorsements Section */
+.endorsements {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.endorsement-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.endorsement-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Headshot Layout */
+.hero-image-wrapper {
+  perspective: 1000px;
+}
+
+.hero-headshot {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-image-wrapper:hover .hero-headshot {
+  transform: scale(1.02);
+}
+
+.hero-image-backdrop {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-image-wrapper:hover .hero-image-backdrop {
+  transform: translate(24px, 24px);
+}
+
 /* Mobile Optimizations */
 @media (hover: none) {
   .hover-target {

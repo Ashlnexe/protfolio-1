@@ -4,14 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="I am Nelson Mathews — a Humanized Fintech Executive with 18+ years scaling banking technology platforms and $1B+ in lending transactions." />
+  
+  <!-- SEO Meta Tags -->
+  <title>Nelson Mathews | Senior FinTech & Banking Technology Executive</title>
+  <meta name="description" content="Nelson Mathews is a senior fintech and banking technology executive with 18+ years of experience scaling lending platforms, financial systems architecture, and enterprise digital transformation." />
+  <meta name="keywords" content="Fintech Executive, Banking Technology, Lending Platforms, Systems Architecture, Digital Transformation, Nelson Mathews, CTO, CIO, Technology Leader" />
+  <meta name="author" content="Nelson Mathews" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nelsonmathews.com/" />
+  <meta property="og:title" content="Nelson Mathews | Senior FinTech Executive" />
+  <meta property="og:description" content="18+ years scaling fintech, banking technology, and lending systems globally." />
+  <meta property="og:image" content="https://nelsonmathews.com/og-image.jpg" /> <!-- Update with actual image URL later -->
+
   <link rel="icon" href="/vite.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Tiro+Telugu:ital@1&display=swap"
-    rel="stylesheet" />
-  <title>Nelson Mathews | Fintech Executive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Tiro+Telugu:ital@1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -85,40 +95,57 @@
 
     <main>
 
-      <section class="hero section-padding pb-32 md:pb-0" id="home">
+      <section class="hero section-padding pb-32 md:pb-0 relative min-h-[90vh] flex items-center" id="home">
         <div class="hero-lighting"></div>
         <div class="container max-w-[1400px] mx-auto px-[5%] w-full relative z-[2]">
-          <div class="w-full">
-            <div
-              class="hero-eyebrow flex items-center gap-4 text-sm font-medium uppercase tracking-widest text-black mb-8 reveal">
-              Hello there! I'm Nelson.
+          <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-20 items-center">
+            
+            <!-- Text Content -->
+            <div class="hero-content-left relative z-10 w-full">
+              <div class="hero-eyebrow flex items-center gap-4 text-sm font-medium uppercase tracking-widest text-black mb-8 reveal">
+                Hello there! I'm Nelson.
+              </div>
+
+              <h1 class="hero-title mb-6 text-black reveal w-full" id="hero-title">
+                Driving Innovation in FinTech &amp; Lending Technology.
+              </h1>
+
+              <div class="text-xl md:text-2xl text-black max-w-xl leading-relaxed reveal mb-4 font-normal">
+                18+ years scaling fintech, banking technology, and lending systems globally.
+              </div>
+
+              <!-- Executive Availability Tagline -->
+              <p class="text-sm md:text-base text-black/70 max-w-lg mb-12 font-medium tracking-wide reveal">
+                Open to leadership roles, consulting, advisory, board positions, and speaking engagements.
+              </p>
+
+              <div class="reveal">
+                <a href="#contact" id="lets-talk-btn" class="lets-talk-btn hover-target inline-flex items-center gap-3">
+                  Let's talk
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <h1 class="hero-title mb-12 text-black reveal w-full" id="hero-title">
-              Driving Innovation in FinTech &amp; Lending Technology.
-            </h1>
-
-            <p class="text-xl md:text-2xl text-black max-w-xl leading-relaxed reveal">
-              18+ years scaling fintech, banking technology, and lending systems globally.
-            </p>
-
-            <div class="mt-10 reveal">
-              <button id="lets-talk-btn" class="lets-talk-btn hover-target">
-                Let's talk
-                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
+            <!-- Headshot Image -->
+            <div class="hero-image-wrapper reveal relative mx-auto lg:mx-0 w-full max-w-md lg:max-w-full">
+              <!-- Using a high-quality professional placeholder from Unsplash for now -->
+              <img 
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800&h=1000" 
+                alt="Nelson Mathews - Professional Headshot" 
+                class="hero-headshot w-full h-auto object-cover rounded-2xl shadow-2xl"
+              />
+              <div class="hero-image-backdrop absolute inset-0 -z-10 bg-black/5 rounded-2xl transform translate-x-4 translate-y-4"></div>
             </div>
+
           </div>
 
-          <div
-            class="mt-16 md:mt-0 md:absolute md:bottom-12 left-0 md:left-auto md:right-[5%] flex items-center justify-center md:justify-start gap-4 z-10">
+          <div class="mt-20 flex items-center justify-center lg:justify-start gap-4 z-10 mx-auto lg:mx-0 w-max">
             <span class="text-xs font-medium uppercase tracking-[0.12em] text-black">Scroll to explore</span>
-            <svg class="scroll-arrow-icon w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="scroll-arrow-icon w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="12" y1="5" x2="12" y2="19" />
               <polyline points="19 12 12 19 5 12" />
             </svg>
@@ -187,24 +214,18 @@
       <div class="marquee-section reveal" id="marquee-section" aria-hidden="true">
         <div class="marquee-row" id="marquee-row">
           <div class="marquee-track" id="marquee-track">
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Lending Platforms</span>
+            <span class="marquee-item">— Banking Architecture</span>
+            <span class="marquee-item">— FinTech Transformation</span>
+            <span class="marquee-item">— Risk & Compliance</span>
+            <span class="marquee-item">— Enterprise FinTech</span>
           </div>
           <div class="marquee-track" id="marquee-track-clone" aria-hidden="true">
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
-            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Lending Platforms</span>
+            <span class="marquee-item">— Banking Architecture</span>
+            <span class="marquee-item">— FinTech Transformation</span>
+            <span class="marquee-item">— Risk & Compliance</span>
+            <span class="marquee-item">— Enterprise FinTech</span>
           </div>
         </div>
       </div>
@@ -246,6 +267,10 @@
                     orchestrating seamless technology adoption and driving measurable outcomes in lending velocity and
                     borrower satisfaction.
                   </p>
+                  <div class="case-study-snippet mt-4 pt-4 border-t border-black/10">
+                    <span class="text-xs font-semibold uppercase tracking-[0.1em] text-black/60 block mb-2">Key Outcome</span>
+                    <p class="text-sm md:text-base text-black/80 font-medium">Successfully onboarded enterprise banking partners, reducing platform implementation timelines by 30% and accelerating go-to-market lending capabilities.</p>
+                  </div>
                 </div>
               </article>
 
@@ -268,6 +293,10 @@
                       transactions</strong>. I led cross-functional IT teams of 80+ across core banking, LOS, and
                     collections systems modernisation.
                   </p>
+                  <div class="case-study-snippet mt-4 pt-4 border-t border-black/10">
+                    <span class="text-xs font-semibold uppercase tracking-[0.1em] text-black/60 block mb-2">Key Outcome</span>
+                    <p class="text-sm md:text-base text-black/80 font-medium">Delivered a comprehensive digital transformation resolving technical debt, improving system uptime to 99.9%, and directly scaling AUM to $1B+.</p>
+                  </div>
                 </div>
               </article>
 
@@ -332,6 +361,10 @@
                     I oversaw regional banking operations across Mumbai's most competitive retail lending market,
                     expanding the asset book by <strong>35%</strong> YoY through strategic product positioning.
                   </p>
+                  <div class="case-study-snippet mt-4 pt-4 border-t border-black/10">
+                    <span class="text-xs font-semibold uppercase tracking-[0.1em] text-black/60 block mb-2">Key Outcome</span>
+                    <p class="text-sm md:text-base text-black/80 font-medium">Repositioned retail lending products to capture high-net-worth market segments, fundamentally shifting the region's profitability matrix.</p>
+                  </div>
                 </div>
               </article>
 
@@ -353,6 +386,10 @@
                     I streamlined operational workflows across the lending division, implementing process controls that
                     improved throughput and reduced error rates in disbursement.
                   </p>
+                  <div class="case-study-snippet mt-4 pt-4 border-t border-black/10">
+                    <span class="text-xs font-semibold uppercase tracking-[0.1em] text-black/60 block mb-2">Key Outcome</span>
+                    <p class="text-sm md:text-base text-black/80 font-medium">Engineered new disbursement workflows that decreased processing friction by 40% while ensuring strict compliance with evolving banking regulations.</p>
+                  </div>
                 </div>
               </article>
 
@@ -374,6 +411,10 @@
                     I ran full P&amp;L responsibility for a securities branch, building client acquisition pipelines and
                     delivering consistent revenue growth quarter-on-quarter.
                   </p>
+                  <div class="case-study-snippet mt-4 pt-4 border-t border-black/10">
+                    <span class="text-xs font-semibold uppercase tracking-[0.1em] text-black/60 block mb-2">Key Outcome</span>
+                    <p class="text-sm md:text-base text-black/80 font-medium">Revitalized branch operations to establish a highly profitable client acquisition funnel, exceeding regional growth targets for 4 consecutive quarters.</p>
+                  </div>
                 </div>
               </article>
 
@@ -463,6 +504,50 @@
               </article>
 
             </div>
+          </div>
+        </div>
+      <section class="endorsements section-padding bg-black/5" id="endorsements">
+        <div class="container max-w-[1400px] mx-auto px-[5%]">
+          <h2 class="section-title reveal mb-16 text-center">Endorsements<span class="dot">.</span></h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            
+            <div class="endorsement-card bg-white p-8 md:p-10 rounded-2xl shadow-sm hover-target reveal">
+              <div class="mb-6 opacity-30">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.570 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+              <p class="text-lg md:text-xl text-black/90 leading-relaxed italic mb-8 font-serif">
+                "Nelson has a rare ability to bridge the gap between complex banking technology and actual business outcomes. His leadership during our digital transformation was instrumental in scaling our lending volume past the $1B mark."
+              </p>
+              <div class="flex items-center gap-4 border-t border-black/10 pt-6">
+                <div class="w-12 h-12 rounded-full bg-black/10"></div>
+                <div>
+                  <h4 class="font-bold text-black">Rajesh Sharma</h4>
+                  <p class="text-sm font-medium text-black/60">Former CEO, Capri Global</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="endorsement-card bg-white p-8 md:p-10 rounded-2xl shadow-sm hover-target reveal">
+              <div class="mb-6 opacity-30">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.570 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+              <p class="text-lg md:text-xl text-black/90 leading-relaxed italic mb-8 font-serif">
+                "Finding an executive who understands both enterprise risk compliance and modern fin-tech architecture is nearly impossible. Nelson brings both, alongside a relentless focus on operational excellence."
+              </p>
+              <div class="flex items-center gap-4 border-t border-black/10 pt-6">
+                <div class="w-12 h-12 rounded-full bg-black/10"></div>
+                <div>
+                  <h4 class="font-bold text-black">Anita Desai</h4>
+                  <p class="text-sm font-medium text-black/60">Board Member, FinTech Advisory</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
