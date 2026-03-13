@@ -1104,10 +1104,57 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .section-padding {
+    padding: 4rem 0;
+  }
+
   .about-content,
   .experience {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     gap: 3rem !important;
+  }
+
+  /* Education mobile layout */
+  .education-item {
+    margin: 0;
+    padding: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  /* Reduce hover scale so it doesn't break mobile bounds */
+  .education-item:hover,
+  .education-item.mobile-active {
+    transform: translateY(-4px) scale(1.02);
+  }
+
+  .institution-wrapper {
+    justify-content: flex-start;
+  }
+
+  .institution-line {
+    display: none;
+  }
+
+  .degree {
+    font-size: 1.5rem;
+  }
+
+  .institution {
+    font-size: 1.1rem;
+  }
+
+  /* Timeline & Expertise Spacing */
+  .timeline-item {
+    padding: 1.5rem;
+  }
+
+  .expertise-card {
+    padding: 1.5rem;
   }
 }
