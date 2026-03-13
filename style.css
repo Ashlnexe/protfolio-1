@@ -18,21 +18,16 @@
     box-sizing: border-box;
   }
 
+  /* Completely hide the scrollbar to fix the black line bug */
   html, body {
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    box-sizing: border-box;
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 
-  html::-webkit-scrollbar,
-  body::-webkit-scrollbar,
-  .app-wrapper::-webkit-scrollbar,
-  main::-webkit-scrollbar {
-    display: none !important; /* Chrome, Safari, Edge */
+  *::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari and Opera */
     width: 0 !important;
+    height: 0 !important;
   }
 
   html {
@@ -50,6 +45,12 @@
     -moz-osx-font-smoothing: grayscale;
     font-size: 1rem; /* 16px base */
     position: relative;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
   }
 
 
