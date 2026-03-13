@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="I am Nelson Mathews — a Humanized Fintech Executive with 18+ years scaling banking technology platforms and $1B+ in lending transactions." />
+  <link rel="icon" href="/vite.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Tiro+Telugu:ital@1&display=swap"
+    rel="stylesheet" />
+  <title>Nelson Mathews | Fintech Executive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="app-wrapper">
+
+    <!-- Premium Intro Loader -->
+    <div id="intro-loader" class="intro-loader">
+      <div class="intro-loader-content">
+        <h1 class="intro-name" aria-label="Nelson Mathews">
+          <span class="word">
+            <span class="char">N</span><span class="char">e</span><span class="char">l</span><span class="char">s</span><span class="char">o</span><span class="char">n</span>
+          </span>
+          <span class="word">
+            <span class="char">M</span><span class="char">a</span><span class="char">t</span><span class="char">h</span><span class="char">e</span><span class="char">w</span><span class="char">s</span>
+          </span>
+        </h1>
+        <div class="intro-line-wrapper">
+          <div class="intro-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader-circle"></div>
+      <div class="loader-text">Connecting...</div>
+    </div>
+
+    <header class="nav-header" id="nav-header">
+      <div class="container nav-container flex justify-between items-center px-[5%] max-w-[1400px] mx-auto">
+        <a href="#" class="logo text-2xl font-extrabold tracking-tight flex items-baseline">NM<span
+            class="logo-dot">.</span></a>
+
+        <nav class="desktop-nav hidden md:flex">
+          <ul class="flex gap-10 list-none">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#expertise" class="nav-link">Expertise</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-toggle hover-target flex md:hidden bg-transparent border-0 text-black p-2 z-[101]"
+          id="mobile-toggle" aria-label="Toggle menu">
+          <svg id="menu-icon" viewBox="0 0 24 24" class="w-6 h-6 stroke-current fill-none stroke-2">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+          <svg id="close-icon" viewBox="0 0 24 24" style="display:none"
+            class="w-6 h-6 stroke-current fill-none stroke-2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <ul class="list-none text-center flex flex-col gap-8">
+          <li><a href="#about" class="mobile-nav-link text-4xl font-bold tracking-tight text-black">About</a></li>
+          <li><a href="#experience" class="mobile-nav-link text-4xl font-bold tracking-tight text-black">Experience</a>
+          </li>
+          <li><a href="#expertise" class="mobile-nav-link text-4xl font-bold tracking-tight text-black">Expertise</a>
+          </li>
+          <li><a href="#contact" class="mobile-nav-link text-4xl font-bold tracking-tight text-black">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero section-padding pb-32 md:pb-0" id="home">
+        <div class="hero-lighting"></div>
+        <div class="container max-w-[1400px] mx-auto px-[5%] w-full relative z-[2]">
+          <div class="w-full">
+            <div
+              class="hero-eyebrow flex items-center gap-4 text-sm font-medium uppercase tracking-widest text-black mb-8 reveal">
+              Hello there! I'm Nelson.
+            </div>
+
+            <h1 class="hero-title mb-12 text-black reveal w-full" id="hero-title">
+              Driving Innovation in FinTech &amp; Lending Technology.
+            </h1>
+
+            <p class="text-xl md:text-2xl text-black max-w-xl leading-relaxed reveal">
+              18+ years scaling fintech, banking technology, and lending systems globally.
+            </p>
+
+            <div class="mt-10 reveal">
+              <button id="lets-talk-btn" class="lets-talk-btn hover-target">
+                Let's talk
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="mt-16 md:mt-0 md:absolute md:bottom-12 left-0 md:left-auto md:right-[5%] flex items-center justify-center md:justify-start gap-4 z-10">
+            <span class="text-xs font-medium uppercase tracking-[0.12em] text-black">Scroll to explore</span>
+            <svg class="scroll-arrow-icon w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <polyline points="19 12 12 19 5 12" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-padding relative overflow-hidden" id="about">
+        <!-- Parallax Background Element -->
+        <div class="about-parallax-bg absolute inset-0 -top-[20%] -bottom-[20%] w-full h-[140%] z-0"
+          style="background: linear-gradient(180deg, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.03) 100%);"></div>
+
+        <div class="container max-w-[1400px] mx-auto px-[5%] relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
+
+            <h2 class="section-title reveal from-left">About<span class="dot">.</span></h2>
+
+            <div class="about-content flex flex-col gap-12">
+              <p class="text-2xl md:text-3xl lg:text-4xl leading-relaxed text-black font-normal about-reveal">
+                I am a fintech and banking technology leader specialising in lending platforms,
+                financial systems architecture, and enterprise digital transformation.
+              </p>
+
+              <p class="text-xl md:text-2xl leading-relaxed text-black about-reveal">
+                I have spent nearly two decades building the infrastructure that lets millions of people access capital
+                —
+                improving lending operations, risk management, and customer experience at scale.
+              </p>
+
+              <div class="stats-grid about-reveal" style="border-top-color: rgba(0,0,0,0.08);">
+                <div class="flex flex-col">
+                  <span class="stats-number">18+</span>
+                  <span class="stats-label">Years of Innovation</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="stats-number">$1B+</span>
+                  <span class="stats-label">Lending Transacted</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="stats-number">10+</span>
+                  <span class="stats-label">Platforms Built</span>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-black/10 about-reveal">
+                <h3 class="text-xs font-semibold uppercase tracking-[0.1em] text-black mb-6">Core Expertise</h3>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-none">
+                  <li class="expertise-item flex items-center gap-3 text-lg text-black"><span
+                      class="expertise-bullet"></span>Lending Technology Platforms</li>
+                  <li class="expertise-item flex items-center gap-3 text-lg text-black"><span
+                      class="expertise-bullet"></span>FinTech Product Strategy</li>
+                  <li class="expertise-item flex items-center gap-3 text-lg text-black"><span
+                      class="expertise-bullet"></span>Banking Infrastructure</li>
+                  <li class="expertise-item flex items-center gap-3 text-lg text-black"><span
+                      class="expertise-bullet"></span>Enterprise IT Leadership</li>
+                  <li class="expertise-item flex items-center gap-3 text-lg text-black"><span
+                      class="expertise-bullet"></span>Client Solutions &amp; Integration</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee-section" id="marquee-section" aria-hidden="true">
+        <div class="marquee-row" id="marquee-row">
+          <div class="marquee-track" id="marquee-track">
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+          </div>
+          <div class="marquee-track" id="marquee-track-clone" aria-hidden="true">
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+            <span class="marquee-item">— Nelson Mathews</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="vision-section" id="vision">
+        <div class="container max-w-[1400px] mx-auto px-[5%] text-center">
+          <blockquote class="vision-quote reveal block mx-auto">
+            "The future of banking isn't code — it's <em>courage</em>. The courage to build systems that serve every
+            human, not just the privileged few."
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="experience section-padding" id="experience">
+        <div class="container max-w-[1400px] mx-auto px-[5%]">
+
+          <h2 class="section-title reveal mb-24">Experience<span class="dot">.</span></h2>
+
+          <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-items">
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">Saison Omni</h3>
+                    <span class="period">May 2023 – Present</span>
+                  </div>
+                  <h4 class="role-name">SVP — Client Solution &amp; Customer Success</h4>
+                  <p class="role-impact">
+                    I lead enterprise client relationships across <strong>10+ institutional partners</strong>,
+                    orchestrating seamless technology adoption and driving measurable outcomes in lending velocity and
+                    borrower satisfaction.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">Capri Global Capital Ltd.</h3>
+                    <span class="period">Jun 2015 – May 2023</span>
+                  </div>
+                  <h4 class="role-name">SVP — Information Technology</h4>
+                  <p class="role-impact">
+                    I architected and scaled lending technology infrastructure supporting <strong>$1B+ in annual
+                      transactions</strong>. I led cross-functional IT teams of 80+ across core banking, LOS, and
+                    collections systems modernisation.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">Capri Global Capital Ltd.</h3>
+                    <span class="period">Aug 2012 – Jun 2015</span>
+                  </div>
+                  <h4 class="role-name">DVP — Systems &amp; Lending Policy</h4>
+                  <p class="role-impact">
+                    I drove end-to-end digitisation of lending policy workflows, reducing loan disbursement time by
+                    <strong>40%</strong> and establishing the enterprise's first integrated risk &amp; compliance
+                    technology layer.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">Aditya Birla Financial Services</h3>
+                    <span class="period">Jun 2012 – Aug 2012</span>
+                  </div>
+                  <h4 class="role-name">Mortgages Operations Manager</h4>
+                  <p class="role-impact">
+                    I managed high-volume mortgage operations for one of India's premier financial conglomerates,
+                    optimising underwriting pipelines and compliance reporting.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">Dhanlaxmi Bank Ltd</h3>
+                    <span class="period">Aug 2010 – Jun 2012</span>
+                  </div>
+                  <h4 class="role-name">Sr. Manager — Mumbai</h4>
+                  <p class="role-impact">
+                    I oversaw regional banking operations across Mumbai's most competitive retail lending market,
+                    expanding the asset book by <strong>35%</strong> YoY through strategic product positioning.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">Religare Finvest Ltd</h3>
+                    <span class="period">Feb 2010 – Jul 2010</span>
+                  </div>
+                  <h4 class="role-name">Dy. Manager — Operations</h4>
+                  <p class="role-impact">
+                    I streamlined operational workflows across the lending division, implementing process controls that
+                    improved throughput and reduced error rates in disbursement.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">DBFS Securities Ltd</h3>
+                    <span class="period">Oct 2009 – Feb 2010</span>
+                  </div>
+                  <h4 class="role-name">Branch Manager</h4>
+                  <p class="role-impact">
+                    I ran full P&amp;L responsibility for a securities branch, building client acquisition pipelines and
+                    delivering consistent revenue growth quarter-on-quarter.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">Nucleus Software</h3>
+                    <span class="period">May 2008 – Jan 2009</span>
+                  </div>
+                  <h4 class="role-name">Business Analyst</h4>
+                  <p class="role-impact">
+                    I translated complex lending domain requirements into actionable product specifications for FinnOne,
+                    ensuring on-time, on-budget delivery for banking clients across APAC.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">Cholamandalam DBS Fin Ltd</h3>
+                    <span class="period">Dec 2007 – May 2008</span>
+                  </div>
+                  <h4 class="role-name">Branch Credit Manager</h4>
+                  <p class="role-impact">
+                    I managed portfolio credit risk and branch-level credit approvals, building a strong underwriting
+                    discipline that maintained NPA levels well below industry benchmarks.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">ABN AMRO Bank</h3>
+                    <span class="period">Jun 2004 – Dec 2007</span>
+                  </div>
+                  <h4 class="role-name">CPA Manager</h4>
+                  <p class="role-impact">
+                    I served one of the world's leading international banks, managing complex consumer lending
+                    portfolios
+                    and customer acquisition strategies in India's rapidly growing retail banking market.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item hover-target reveal">
+                <div class="timeline-node">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header flex justify-between items-baseline flex-wrap gap-4 mb-3">
+                    <h3 class="company-name">ICICI Bank</h3>
+                    <span class="period">Jan 2000 – Jan 2004</span>
+                  </div>
+                  <h4 class="role-name">Team Leader — Loan Processing</h4>
+                  <p class="role-impact">
+                    I built a high-performance loan processing team from the ground up at one of India's largest private
+                    banks, establishing operational excellence standards that became the blueprint for the division.
+                  </p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="expertise-section section-padding" id="expertise">
+        <div class="container max-w-[1400px] mx-auto px-[5%]">
+
+          <h2 class="section-title reveal mb-24">Areas of Expertise<span class="dot">.</span></h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+
+            <div class="expertise-card hover-target reveal">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                  <polyline points="2 17 12 22 22 17" />
+                  <polyline points="2 12 12 17 22 12" />
+                </svg>
+              </div>
+              <h3 class="card-title">FinTech Platforms</h3>
+              <p class="card-desc">Building scalable, high-performance financial technology platforms that serve
+                millions of borrowers.</p>
+            </div>
+
+            <div class="expertise-card hover-target reveal">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                  <line x1="6" y1="6" x2="6.01" y2="6" />
+                  <line x1="6" y1="18" x2="6.01" y2="18" />
+                </svg>
+              </div>
+              <h3 class="card-title">Lending Systems</h3>
+              <p class="card-desc">Architecting end-to-end loan management and origination systems that handle billions
+                in transactions.</p>
+            </div>
+
+            <div class="expertise-card hover-target reveal">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </div>
+              <h3 class="card-title">Enterprise IT Strategy</h3>
+              <p class="card-desc">Aligning technology initiatives with complex business goals and evolving regulatory
+                requirements.</p>
+            </div>
+
+            <div class="expertise-card hover-target reveal">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+              </div>
+              <h3 class="card-title">Tech Integration</h3>
+              <p class="card-desc">Seamless integration of third-party financial services, APIs, and legacy core banking
+                systems.</p>
+            </div>
+
+            <div class="expertise-card hover-target reveal">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <h3 class="card-title">Client Solutions</h3>
+              <p class="card-desc">Delivering exceptional customer success and tailored solutions for financial
+                institutions at scale.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="education section-padding" id="education">
+        <div class="container max-w-[1400px] mx-auto px-[5%]">
+
+          <h2 class="section-title reveal mb-24 border-t border-black/5 pt-16">Education<span class="dot">.</span></h2>
+
+          <div class="education-list flex flex-col">
+
+            <div class="education-item highlighted hover-target reveal">
+              <h3 class="degree text-black">MBA</h3>
+              <div class="institution-wrapper">
+                <span class="institution-line"></span>
+                <span class="institution">ISBM</span>
+              </div>
+            </div>
+
+            <div class="education-item hover-target reveal">
+              <h3 class="degree text-black">Bachelor of Commerce</h3>
+              <div class="institution-wrapper">
+                <span class="institution-line"></span>
+                <span class="institution">University of Mumbai</span>
+              </div>
+            </div>
+
+            <div class="education-item hover-target reveal">
+              <h3 class="degree text-black">SAP SD Training</h3>
+              <div class="institution-wrapper">
+                <span class="institution-line"></span>
+                <span class="institution">Certification</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-padding" id="contact">
+        <div class="container max-w-[1400px] mx-auto px-[5%]">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+
+            <div class="contact-info reveal from-left">
+              <h2 class="section-title mb-6">Get in Touch<span class="dot">.</span></h2>
+              <p class="text-lg text-black mb-10 leading-relaxed max-w-md">
+                I am open to discussing executive opportunities, consulting, or speaking engagements
+                in fintech and banking technology.
+              </p>
+
+              <div class="contact-links flex flex-col gap-4">
+
+                <a href="mailto:contact@nelsonmathews.com" class="contact-link hover-target">
+                  <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="link-label">Email</span>
+                    <span class="link-value">contact@nelsonmathews.com</span>
+                  </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/nelson-mathews-a4657110/" target="_blank" rel="noreferrer"
+                  class="contact-link hover-target">
+                  <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                      <rect x="2" y="9" width="4" height="12" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="link-label">LinkedIn</span>
+                    <span class="link-value">Connect professionally</span>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <form class="contact-form flex flex-col gap-6 reveal" id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" class="hover-target" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john@company.com" class="hover-target" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="How can we collaborate?" class="hover-target"></textarea>
+              </div>
+              <button type="submit" class="submit-btn hover-target">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer bg-black text-white">
+      <div class="container max-w-[1400px] mx-auto px-[5%]">
+
+        <div class="footer-top flex flex-col lg:flex-row justify-between gap-16 pb-16 border-b border-white/10 reveal">
+          <div class="footer-title">
+            <h2 class="text-3xl md:text-5xl font-bold tracking-tight leading-tight text-white">
+              Let's build the future<br />of financial technology.
+            </h2>
+          </div>
+
+          <div class="footer-contact">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.1em] text-white/50 mb-4">Get in touch</h3>
+            <a href="mailto:contact@nelsonmathews.com" class="email-link hover-target text-white">
+              contact@nelsonmathews.com
+              <span class="arrow-icon">
+                <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </span>
+            </a>
+
+            <div class="social-links flex gap-3 mt-6">
+              <a href="https://www.linkedin.com/in/nelson-mathews-a4657110/" target="_blank" rel="noreferrer"
+                class="social-link hover-target text-white border border-white/20 rounded p-2 hover:bg-white/10 transition-colors">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+              <a href="mailto:contact@nelsonmathews.com"
+                class="social-link hover-target text-white border border-white/20 rounded p-2 hover:bg-white/10 transition-colors">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span class="sr-only">Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom flex justify-between items-center pt-8 pb-10 text-sm text-white/60">
+          <p>© <span id="year"></span> Nelson Mathews. All rights reserved.</p>
+          <p class="footer-tagline hidden sm:block">Fintech Leadership &amp; Innovation</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
