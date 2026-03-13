@@ -8,15 +8,15 @@ export function initReveal() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                const siblings = [...entry.target.parentElement.children];
-                const delay = siblings.indexOf(entry.target) * 80;
+                const siblings = [...entry.target.parentElement.querySelectorAll('.reveal')];
+                const delay = siblings.indexOf(entry.target) * 40; // Halved from 80
                 setTimeout(() => {
                     entry.target.classList.add('visible');
                 }, delay);
                 observer.unobserve(entry.target);
             }
         });
-    }, { rootMargin: '-80px 0px', threshold: 0.05 });
+    }, { rootMargin: '0px 0px -50px 0px', threshold: 0.01 }); // Eager trigger
     revealEls.forEach(el => observer.observe(el));
 }
 
