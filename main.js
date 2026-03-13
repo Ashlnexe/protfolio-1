@@ -4,6 +4,7 @@ import Lenis from '@studio-freight/lenis';
 import { initReveal, initAboutScroll, initTimelinePop, initHeroGlow, initVisionGsap, initEducationMobileScroll, initEducationScroll } from './js/animations.js';
 
 gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ ignoreMobileResize: true });
 
 // Initialize Lenis for smooth scrolling
 const lenis = new Lenis({

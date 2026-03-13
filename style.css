@@ -1094,3 +1094,20 @@
     opacity: 1;
   }
 }
+
+/* Mobile Optimizations */
+@media (hover: none) {
+  .hover-target {
+    transform: none !important;
+    background: inherit;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content,
+  .experience {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    gap: 3rem !important;
+  }
+}
