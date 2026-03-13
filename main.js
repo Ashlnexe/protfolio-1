@@ -1,6 +1,6 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { initReveal, initAboutScroll, initTimelinePop, initHeroGlow, initVisionGsap, initEducationMobileScroll } from './js/animations.js';
+import { initReveal, initAboutScroll, initTimelinePop, initHeroGlow, initVisionGsap, initEducationMobileScroll, initEducationScroll } from './js/animations.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,6 +112,7 @@ if (introLoader) {
       initHeroGlow();
       initVisionGsap();
       initEducationMobileScroll();
+      initEducationScroll();
 
       // Trigger hero content manually if they are already in viewport 
       // initReveal will handle it once the observer starts, but just in case
@@ -145,4 +146,5 @@ if (introLoader) {
   initHeroGlow();
   initVisionGsap();
   initEducationMobileScroll();
+  initEducationScroll();
 }

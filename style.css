@@ -42,6 +42,8 @@
     opacity: 0.05;
     pointer-events: none;
     z-index: 1;
+    transform: translateZ(0);
+    will-change: transform;
   }
 
   .app-wrapper {

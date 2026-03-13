@@ -191,3 +191,38 @@ export function initEducationMobileScroll() {
         });
     });
 }
+
+export function initEducationScroll() {
+    const educationList = document.querySelector('.education-list');
+    const educationItems = gsap.utils.toArray('.education-item');
+    const educationTitle = document.querySelector('.education .section-title');
+    
+    if (!educationList || !educationItems.length) return;
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: educationList,
+            start: "top 80%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    if (educationTitle) {
+        tl.fromTo(educationTitle, 
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+        );
+    }
+
+    tl.fromTo(educationItems,
+        { opacity: 0, y: 50 },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 1.2,
+            stagger: 0.2,
+            ease: 'power3.out'
+        },
+        educationTitle ? "-=0.6" : 0
+    );
+}
