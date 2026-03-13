@@ -467,6 +467,16 @@
   font-style: italic;
 }
 
+.experience {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 0%, transparent 15%);
+}
+
+.expertise-section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.04) 0%, transparent 15%);
+}
+
 .timeline-container {
   position: relative;
   max-width: 1000px;
