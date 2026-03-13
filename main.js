@@ -1,8 +1,33 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Lenis from '@studio-freight/lenis';
 import { initReveal, initAboutScroll, initTimelinePop, initHeroGlow, initVisionGsap, initEducationMobileScroll, initEducationScroll } from './js/animations.js';
 
 gsap.registerPlugin(ScrollTrigger);
+
+// Initialize Lenis for smooth scrolling
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  direction: 'vertical',
+  gestureDirection: 'vertical',
+  smooth: true,
+  mouseMultiplier: 1,
+  smoothTouch: false,
+  touchMultiplier: 2,
+  infinite: false,
+});
+
+// Synchronize Lenis with GSAP ScrollTrigger
+lenis.on('scroll', ScrollTrigger.update);
+
+// Hook Lenis into GSAP requestAnimationFrame ticker
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000); // GSAP time is in seconds, Lenis needs ms
+});
+
+// Disable GSAP lag smoothing to properly sync with Lenis
+gsap.ticker.lagSmoothing(0);
 
 const navHeader = document.querySelector('.nav-header');
 window.addEventListener('scroll', () => {
