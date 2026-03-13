@@ -146,9 +146,14 @@ export function initVisionGsap() {
     const visionQuote = document.querySelector('.vision-quote');
     if (!visionQuote) return;
     gsap.fromTo(visionQuote,
-        { opacity: 0, y: 60 },
+        { opacity: 0, y: 40, filter: 'blur(12px)', scale: 1.05 },
         {
-            opacity: 1, y: 0, duration: 1.2, ease: 'power3.out',
+            opacity: 1, 
+            y: 0, 
+            filter: 'blur(0px)', 
+            scale: 1, 
+            duration: 1.5, 
+            ease: 'power3.out',
             scrollTrigger: {
                 trigger: visionQuote,
                 start: 'top 80%',
