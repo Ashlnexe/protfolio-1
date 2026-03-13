@@ -857,7 +857,7 @@
   font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  color: rgba(0, 0, 0, 0.07);
+  color: #000000;
   white-space: nowrap;
   text-transform: uppercase;
 }
