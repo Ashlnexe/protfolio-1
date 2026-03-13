@@ -105,7 +105,7 @@ export function initTimelinePop() {
         entries.forEach(entry => {
             entry.target.classList.toggle('pop-active', entry.isIntersecting);
         });
-    }, { rootMargin: '-40% 0px -40% 0px', threshold: 0 });
+    }, { rootMargin: '-10% 0px -10% 0px', threshold: 0.1 }); // Eager threshold for snappy reveal
     timelineItems.forEach(item => obs.observe(item));
 }
 

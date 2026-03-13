@@ -21,7 +21,9 @@
   html, body {
     overflow-x: hidden;
     width: 100vw;
+    max-width: 100%;
     position: relative;
+    box-sizing: border-box;
   }
 
   html {
@@ -154,6 +156,7 @@
   .container {
     width: min(90%, 1400px); /* Expanded for elite displays */
     margin-inline: auto;
+    padding-inline: 5%; /* Fluid mobile padding */
   }
 
   .section-title {
@@ -390,7 +393,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 8rem; /* Space between logo and content */
+    padding-top: 10rem; /* Increased space for logo clearance */
     min-height: 80vh;
   }
   .hero-metrics {
@@ -454,7 +457,7 @@
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Faster snap */
   will-change: transform, opacity;
 }
 
@@ -612,7 +615,7 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 3rem;
   border-radius: 16px;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* Sharper transition */
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Elite snap transition */
 }
 
 .timeline-item:hover {
@@ -701,7 +704,7 @@
   }
 
   .timeline-node {
-    left: -2rem;
+    left: 0; /* Reset negative left */
     top: 2.5rem;
     width: 24px;
     height: 24px;
@@ -756,7 +759,7 @@
 
 .education-item {
   padding: 3.5rem 2rem;
-  margin: 0 -2rem;
+  margin: 0; /* Removed negative horizontal margin */
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   display: grid;
   grid-template-columns: 1fr 1fr;
