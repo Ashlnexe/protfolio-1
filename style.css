@@ -1181,6 +1181,11 @@
 }
 
 @media (max-width: 768px) {
+  body::before {
+    display: none !important;
+    content: none !important;
+  }
+
   html, body {
     overflow-x: hidden;
     width: 100%;
