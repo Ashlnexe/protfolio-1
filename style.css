@@ -48,8 +48,6 @@
   }
 
   html, body {
-    width: 100%;
-    max-width: 100%;
     overscroll-behavior-y: none; /* Prevent mobile pull-to-refresh stickiness */
   }
 
@@ -58,9 +56,6 @@
   .app-wrapper {
     position: relative;
     z-index: 2;
-    overflow-x: clip; /* Consistently apply clip instead of hidden */
-    width: 100%;
-    max-width: 100%;
   }
 
   /* Lenis Scroll Boilerplate */
@@ -1202,12 +1197,13 @@
   }
 
   html, body {
-    overflow-x: hidden;
+    overflow-x: clip !important;
     width: 100%;
+    touch-action: pan-y !important;
   }
 
   .container {
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   .section-padding {
