@@ -687,27 +687,7 @@
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
-  .role-impact {
-    display: none;
-  }
 
-  .timeline-items {
-    padding-left: 2rem;
-    gap: 4rem;
-  }
-
-  .timeline-item {
-    padding: 2rem;
-  }
-
-  .timeline-node {
-    left: 0; /* Reset negative left */
-    top: 2.5rem;
-    width: 24px;
-    height: 24px;
-  }
-}
 
 .expertise-card {
   background: rgba(0, 0, 0, 0.02);
@@ -1248,6 +1228,10 @@
   }
 
   /* Timeline mobile layout */
+  .role-impact {
+    display: none !important;
+  }
+
   .timeline-line {
     display: none !important;
   }
@@ -1258,7 +1242,7 @@
   }
 
   .timeline-item {
-    padding: 1.5rem !important;
+    padding: 1.25rem !important;
   }
 
   .timeline-node {
@@ -1266,11 +1250,33 @@
     left: 0 !important;
     top: 0 !important;
     transform: none !important;
-    margin-bottom: 1.25rem !important;
-    width: 36px !important;
-    height: 36px !important;
+    margin-bottom: 1rem !important;
+    width: 32px !important;
+    height: 32px !important;
     background-color: #000 !important;
     color: #fff !important;
+  }
+
+  .company-name {
+    font-size: 1.35rem !important;
+    width: 100% !important;
+  }
+
+  .period {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.75rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .role-name {
+    font-size: 0.95rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .timeline-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.25rem !important;
   }
 
   /* Expertise spacing */
