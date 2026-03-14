@@ -125,11 +125,13 @@ if (introLoader) {
 
   // Prevent scroll during loader
   document.body.style.overflow = 'hidden';
+  if (typeof lenis !== 'undefined') lenis.stop();
 
   const tl = gsap.timeline({
     onComplete: () => {
       introLoader.style.display = 'none';
       document.body.style.overflow = '';
+      if (typeof lenis !== 'undefined') lenis.start();
       
       // Initialize scroll animations after loader finishes
       initReveal();

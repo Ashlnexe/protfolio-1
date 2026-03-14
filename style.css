@@ -31,7 +31,6 @@
   }
 
   html {
-    scroll-behavior: smooth;
     background-color: var(--bg-color);
   }
 
@@ -48,9 +47,9 @@
   }
 
   html, body {
-    overflow-x: hidden;
     width: 100%;
     max-width: 100%;
+    overscroll-behavior-y: none; /* Prevent mobile pull-to-refresh stickiness */
   }
 
 
