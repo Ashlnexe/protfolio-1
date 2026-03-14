@@ -678,6 +678,10 @@
 }
 
 @media (max-width: 768px) {
+  .role-impact {
+    display: none;
+  }
+
   .timeline-items {
     padding-left: 2rem;
     gap: 4rem;
