@@ -1268,4 +1268,19 @@
   .expertise-card {
     padding: 1.5rem !important;
   }
+
+  /* Footer mobile layout */
+  .footer-title h2 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  .email-link {
+    font-size: clamp(1rem, 5vw, 1.5rem) !important;
+    word-break: break-word;
+  }
+
+  .footer-top {
+    gap: 3rem !important;
+  }
 }
