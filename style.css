@@ -39,7 +39,8 @@
     background-color: var(--bg-color);
     color: #000000;
     line-height: 1.625; /* Optimized line-height for readability */
-    overflow-x: hidden;
+    overflow-x: clip; /* Fix for Android Chrome scroll lock */
+    touch-action: pan-y; /* Prioritize vertical scrolling */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 1rem; /* 16px base */
@@ -57,7 +58,7 @@
   .app-wrapper {
     position: relative;
     z-index: 2;
-    overflow-x: hidden;
+    overflow-x: clip; /* Consistently apply clip instead of hidden */
     width: 100%;
     max-width: 100%;
   }
